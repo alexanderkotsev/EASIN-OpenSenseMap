@@ -71,8 +71,8 @@ angular.module('easinApp')
                    tempMarker.comment = response[i].properties.Comment;
                        
                   // Coordinates
-                   tempMarker.lat = response[i].geometry.coordinates[0];
-                   tempMarker.lng = response[i].geometry.coordinates[1];
+                   tempMarker.lat = response[i].geometry.coordinates[1];
+                   tempMarker.lng = response[i].geometry.coordinates[0];
                   
                        
                   if (response[i].properties.Status == "Submitted"){
